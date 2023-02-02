@@ -7,9 +7,12 @@ GET _search
   }
 }
 
+
 GET _cat/indices?v&s=health:desc,index&h=health,status,index,docs.count,pri,rep
 
+
 GET _cat/allocation?v
+
 
 PUT */_settings
 {
@@ -19,5 +22,6 @@ PUT */_settings
     }
   }
 }
+
 
 GET */_settings
